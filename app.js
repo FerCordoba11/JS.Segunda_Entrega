@@ -105,7 +105,11 @@ function mostrarStock() {
 
 
 
-const barraNav = document.getElementById('#navScroll');
+const name = document.querySelector('#name');
+name.innertext = "Hola";
+
+
+
 
 console.log("barraNav");
 
