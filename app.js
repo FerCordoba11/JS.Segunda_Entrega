@@ -83,7 +83,7 @@ function actualizarMenu() {
             `;
         });
         menu.innerHTML += `<p>Total: $${calcularTotalCarrito()}</p>
-        <button class="text-focus-in"><a href="./carrito.html">Carrito</a></button>`;
+        <button class="text-focus-in"><a href="../pages/carrito.html">Carrito</a></button>`;
     } else {
         menu.innerHTML = '<p>El carrito está vacío</p>';
     }
