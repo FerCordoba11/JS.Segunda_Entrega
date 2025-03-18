@@ -83,7 +83,7 @@ body{
 }
 
 
-
+ca
 
 
 
@@ -121,6 +121,26 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
+.cart {
+    cursor: pointer;
+}
+
+.menu {
+    display: none; /* Oculto inicialmente */
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu.show {
+    display: block; /* Visible cuando tenga la clase 'show' */
+}
+
 
 
 
@@ -230,4 +250,20 @@ body{
     width: auto;
     display: inline-block;
 
+}
+
+
+
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2e28a7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    display: none; 
 }
