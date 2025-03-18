@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lavishly+Yours&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,400;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav id="navScroll" class="navBar">
+            <img class="logo" src="./image/logo.png" alt="">
+            <div>
+                <p class="name" id="name">your time</p>
+            </div>
+            <img class="cart" src="./image/carrito-de-compras.png" alt="">
+            <div class="menu" id="menu">
+                <p>Artículo 1</p>
+                <p>Artículo 2</p>
+                <p>Artículo 3</p>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section id="seccion">
+
+
+    </section>
+
+
+
+
+
+    <main id="maingeneral">
+        <div class="img-container">
+            <img class="background-img">
+            <img class="imgFondo" src="./image/fondo.png" alt="">
+            </img>
+            <div class="overlay">
+                <p class="centered-text">Tienda</p>
+            </div>
+        </div>
+
+        <section id="deco">
+            <section>
+                <h1 class="TiendaDeco" data-aos="fade-up" data-aos-duration="2000">Tu estilo Deco</h1>
+                <button onclick="eliminarDelCarrito()">Eliminar del carrito</button>
+                <button onclick="mostrarCarrito()">Mostrar carrito</button>
+                <button onclick="calcularTotalCarrito()">Total</button>
+                <button onclick="mostrarStock()">Stock</button>
+                <button id="cart">carrito</button>
+
+                <picture class="decoImg">
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco1" src="./image/smartwatch1.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="1" onclick="agregarAlCarrito(1)">Comprar</button>
+                    </div>
+                    <!-- id="1" -->
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco2" src="./image/smartwatch2.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="2" onclick="agregarAlCarrito(2)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco3" src="./image/smartwatch3.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="3" onclick="agregarAlCarrito(3)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco4" src="./image/smartwatch4.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="4" onclick="agregarAlCarrito(4)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco5" src="./image/smartwatch5.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="5" onclick="agregarAlCarrito(5)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco6" src="./image/smartwatch6.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="6" onclick="agregarAlCarrito(6)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco7" src="./image/smartwatch7.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="7" onclick="agregarAlCarrito(7)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco8" src="./image/smartwatch8.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="8" onclick="agregarAlCarrito(8)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco9" src="./image/smartwatch9.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="9" onclick="agregarAlCarrito(9)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco10" src="./image/smartwatch10.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="10" onclick="agregarAlCarrito (10)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco11" src="./image/smartwatch11.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="11" onclick="agregarAlCarrito(11)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco12" src="./image/smartwatch12.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="12" onclick="agregarAlCarrito(12)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco13" src="./image/smartwatch13.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="13" onclick="agregarAlCarrito(13)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco14" src="./image/smartwatch14.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="14" onclick="agregarAlCarrito(14)">Comprar</button>
+                    </div>
+                    <div class="DecoProducto" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="deco15" src="./image/smartwatch15.png" alt="">
+                        <div class="Name">Center</div>
+                        <div class="Tipo">Mesa</div>
+                        <button class="text-focus-in" id="15" onclick="agregarAlCarrito(15)">Comprar</button>
+                    </div>
+                </picture>
+            </section>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="cart" id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="total">0</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
