@@ -267,3 +267,13 @@ ca
     z-index: 1000;
     display: none; 
 }
+
+
+.sitio {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin distorsión */
+    margin: 0; /* Quita cualquier margen */
+    padding: 0; /* Quita cualquier padding */
+    display: block; /* Asegura que no se comporte como inline-block */
+}
