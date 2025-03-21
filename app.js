@@ -18,6 +18,25 @@ const stockProductos = [
 
 const carrito = [];
 
+// Guardar y cargar datos de localStorage
+function guardarEnLocalStorage() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    localStorage.setItem("stockProductos", JSON.stringify(stockProductos));
+}
+
+function cargarDesdeLocalStorage() {
+    const carritoGuardado = localStorage.getItem("carrito");
+    const stockGuardado = localStorage.getItem("stockProductos");
+    
+    if (carritoGuardado) {
+        carrito.push(...JSON.parse(carritoGuardado));
+    }
+    
+    if (stockGuardado) {
+        stockProductos.splice(0, stockProductos.length, ...JSON.parse(stockGuardado));
+    }
+}
+
 // Función para mostrar notificaciones
 function mostrarNotificacion(mensaje) {
     const notificacion = document.createElement("div");
@@ -25,11 +44,8 @@ function mostrarNotificacion(mensaje) {
     notificacion.textContent = mensaje;
     document.body.appendChild(notificacion);
     notificacion.style.display = "block";
-    setTimeout(() => { notificacion.style.display = "none"; }, 3000); }
-
-
-
-
+    setTimeout(() => { notificacion.style.display = "none"; }, 3000);
+}
 
 // Función para agregar productos al carrito
 function agregarAlCarrito(idProducto) {
@@ -44,10 +60,11 @@ function agregarAlCarrito(idProducto) {
         producto.cantidad--;
         actualizarMenu(); // Actualizar el menú tras modificar el carrito
         mostrarNotificacion("¡Producto agregado al carrito!");
+        guardarEnLocalStorage(); // Guardar cambios
     } else {
         mostrarNotificacion("No hay stock disponible.");
     }
-};
+}
 
 // Función para eliminar un producto del carrito
 function eliminarDelCarrito(idProducto) {
@@ -61,10 +78,11 @@ function eliminarDelCarrito(idProducto) {
         productoEnStock.cantidad++; // Devolver el stock
         actualizarMenu();
         mostrarNotificacion("Producto eliminado del carrito.");
+        guardarEnLocalStorage(); // Guardar cambios
     } else {
         mostrarNotificacion("El producto no está en el carrito.");
     }
-};
+}
 
 // Función para actualizar el menú
 function actualizarMenu() {
@@ -87,12 +105,12 @@ function actualizarMenu() {
     } else {
         menu.innerHTML = '<p>El carrito está vacío</p>';
     }
-};
+}
 
 // Función para calcular el total del carrito
 function calcularTotalCarrito() {
     return carrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
-;}
+}
 
 // Función para mostrar el stock en consola
 function mostrarStock() {
@@ -110,27 +128,6 @@ cartLogo.addEventListener('click', () => {
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Evento de clic para agregar un producto al carrito
-// document.querySelector('#agregar').addEventListener('click', () => {
-//     const idProducto = parseInt(document.querySelector('#idProducto').value);
-//     agregarAlCarrito(idProducto);
-// });
-
-
+// Cargar datos desde localStorage al iniciar
+cargarDesdeLocalStorage();
+actualizarMenu();
