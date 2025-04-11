@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "nombre": "Xiaomi Redmi Watch 5 Active",
+        "precio": 500,
+        "imagen": "./image/smartwatch1.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Black Shark S1 Pro 1.43 Smartwatch",
+        "precio": 1000,
+        "imagen": "./image/smartwatch2.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Black Shark S1 Classic 1,43 Amoled",
+        "precio": 1500,
+        "imagen": "./image/smartwatch3.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Black Shark S1 Classic",
+        "precio": 500,
+        "imagen": "./image/smartwatch4.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Xiaomi Mi Band 8 Pro",
+        "precio": 1000,
+        "imagen": "./image/smartwatch5.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Xiaomi Redmi Watch 4",
+        "precio": 1500,
+        "imagen": "./image/smartwatch6.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Amazfit GTR 3 Pro",
+        "precio": 500,
+        "imagen": "./image/smartwatch7.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Forerunner 55 Running Garmin",
+        "precio": 1000,
+        "imagen": "./image/smartwatch8.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Forerunner 165 Garmin",
+        "precio": 1500,
+        "imagen": "./image/smartwatch9.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Amazfit Balance",
+        "precio": 500,
+        "imagen": "./image/smartwatch10.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Xiaomi Watch S3",
+        "precio": 1000,
+        "imagen": "./image/smartwatch11.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Amazfit New GTR 4 NEW",
+        "precio":  1500,
+        "imagen": "./image/smartwatch12.png"
+    },
+    {
+        "id": 13,
+        "nombre": "Smartwatch Dm56",
+        "precio": 500,
+        "imagen": "./image/smartwatch13.png"
+    },
+    {
+        "id": 14,
+        "nombre": "Smartwatch Hk08",
+        "precio": 1000,
+        "imagen": "./image/smartwatch14.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Smartwatch Reloj Táctico K67",
+        "precio": 1500,
+        "imagen": "./image/smartwatch15.png"
+    }
+]
