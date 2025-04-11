@@ -70,6 +70,8 @@ cargarProductosDesdeJSON('productos.json');
 function crearBarraAside() {
     const aside = document.createElement('aside');
     aside.classList.add('barra-aside');
+    aside.setAttribute('data-aos', 'fade-up');
+    aside.setAttribute('data-aos-duration', '2000');
     aside.innerHTML = `
         <div class="busqueda">
             <input type="text" id="busqueda" placeholder="Buscar productos">
