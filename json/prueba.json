@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Xiaomi Redmi Watch 5 Active",
         "precio": 500,
-        "imagen": "./image/smartwatch1.png"
+        "imagen": "../2da entrega JS - Fernando Cordoba/image/smartwatch1.png"
     },
     {
         "id": 2,

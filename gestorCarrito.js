@@ -34,7 +34,10 @@ class GestorCarrito {
                 productoEnCarrito.cantidad++;
             } else {
                 this.carrito.push({
-
+                    id: producto.id,
+                    nombre: producto.nombre,
+                    precio: producto.precio,
+                    imagen: producto.imagen,
                     cantidad: 1
                 });
             }
